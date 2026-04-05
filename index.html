@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Your Company in Pakistan — SECP Experts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0e1a14;
+    --forest: #1a3c2e;
+    --moss: #2d6a4f;
+    --sage: #52b788;
+    --mist: #d8f3dc;
+    --cream: #faf9f6;
+    --gold: #c9a84c;
+    --gold-light: #f0d98a;
+    --warm: #f5f0e8;
+    --mid: #7a8c82;
+    --border: rgba(26,60,46,0.12);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    background: var(--forest);
+    padding: 60px 56px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left::before {
+    content: '';
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(82,183,136,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-left::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 100px;
+    width: fit-content;
+    margin-bottom: 36px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .badge-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 2s ease infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .hero-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 58px);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 28px;
+    animation: fadeUp 0.7s 0.1s ease both;
+  }
+
+  .hero-heading em {
+    font-style: normal;
+    color: var(--sage);
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.65);
+    max-width: 420px;
+    margin-bottom: 48px;
+    font-weight: 300;
+    animation: fadeUp 0.7s 0.2s ease both;
+  }
+
+  .trust-row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    animation: fadeUp 0.7s 0.3s ease both;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+  }
+
+  .trust-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: rgba(82,183,136,0.2);
+    border: 1px solid rgba(82,183,136,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .stats-strip {
+    display: flex;
+    gap: 32px;
+    margin-top: 52px;
+    padding-top: 36px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    animation: fadeUp 0.7s 0.4s ease both;
+  }
+
+  .stat-item { }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--sage);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* ── FORM SIDE ── */
+  .hero-right {
+    background: var(--warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 52px;
+    position: relative;
+  }
+
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--sage) 100%);
+  }
+
+  .form-card {
+    width: 100%;
+    max-width: 440px;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--forest);
+    margin-bottom: 6px;
+  }
+
+  .form-subtitle {
+    font-size: 14px;
+    color: var(--mid);
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--forest);
+    margin-bottom: 7px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--moss);
+    box-shadow: 0 0 0 3px rgba(45,106,79,0.1);
+  }
+
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232d6a4f' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+
+  textarea { resize: vertical; min-height: 80px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .submit-btn {
+    width: 100%;
+    padding: 15px 24px;
+    background: var(--forest);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.2s, transform 0.15s;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+  }
+
+  .submit-btn:hover { background: var(--moss); transform: translateY(-1px); }
+  .submit-btn:active { transform: translateY(0); }
+
+  .submit-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.06) 100%);
+  }
+
+  .privacy-note {
+    text-align: center;
+    font-size: 11px;
+    color: var(--mid);
+    margin-top: 14px;
+    line-height: 1.6;
+  }
+
+  /* ── SUCCESS STATE ── */
+  .success-state {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .success-icon {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: var(--mist);
+    margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+
+  .success-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+
+  .success-sub {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.7;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* ── PROCESS SECTION ── */
+  .process {
+    background: #fff;
+    padding: 96px 60px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 700;
+    color: var(--forest);
+    max-width: 480px;
+    line-height: 1.2;
+    margin-bottom: 64px;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+  }
+
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 28px; left: 10%; right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent);
+  }
+
+  .step {
+    padding: 0 24px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .step.visible { opacity: 1; transform: translateY(0); }
+  .step:nth-child(2) { transition-delay: 0.1s; }
+  .step:nth-child(3) { transition-delay: 0.2s; }
+  .step:nth-child(4) { transition-delay: 0.3s; }
+
+  .step-num {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--forest);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--forest);
+    margin-bottom: 10px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: var(--mid);
+    line-height: 1.65;
+  }
+
+  /* ── PACKAGES ── */
+  .packages {
+    background: var(--forest);
+    padding: 96px 60px;
+  }
+
+  .packages .section-label { color: var(--gold-light); }
+  .packages .section-title { color: #fff; max-width: 600px; }
+
+  .pkg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .pkg-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 36px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .pkg-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+  }
+
+  .pkg-card.featured {
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.08);
+  }
+
+  .pkg-card.featured::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: 16px; right: -24px;
+    background: var(--gold);
+    color: var(--forest);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 32px;
+    transform: rotate(45deg) translateX(10px);
+  }
+
+  .pkg-name {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 10px;
+  }
+
+  .pkg-card.featured .pkg-name { color: var(--gold-light); }
+
+  .pkg-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .pkg-price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .pkg-type {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 28px;
+  }
+
+  .pkg-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .pkg-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+  }
+
+  .check {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: rgba(82,183,136,0.2);
+    border: 1px solid var(--sage);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-size: 9px;
+    color: var(--sage);
+  }
+
+  .pkg-card.featured .check {
+    background: rgba(201,168,76,0.2);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .pkg-cta {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    color: #fff;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .pkg-cta:hover { background: rgba(255,255,255,0.1); }
+
+  .pkg-card.featured .pkg-cta {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--forest);
+    font-weight: 600;
+  }
+
+  .pkg-card.featured .pkg-cta:hover { background: var(--gold-light); }
+
+  /* ── FAQ ── */
+  .faq {
+    background: var(--cream);
+    padding: 96px 60px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 22px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--forest);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .faq-icon {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--mist);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    color: var(--moss);
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    line-height: 1;
+  }
+
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.75;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+
+  .faq-item.open .faq-a { max-height: 200px; padding-bottom: 20px; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .footer-note {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 56px 32px 48px; min-height: auto; }
+    .hero-right { padding: 48px 28px 60px; }
+    .stats-strip { gap: 24px; }
+    .steps-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .steps-grid::before { display: none; }
+    .pkg-grid { grid-template-columns: 1fr; }
+    .process, .packages, footer { padding-left: 28px; padding-right: 28px; }
+    .faq { padding: 60px 28px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="badge">
+      <div class="badge-dot"></div>
+      SECP &amp; FBR Registered CA
+    </div>
+
+    <h1 class="hero-heading">
+      Register Your<br>
+      Company in<br>
+      <em>Pakistan</em> — Fast.
+    </h1>
+
+    <p class="hero-sub">
+      Full SECP incorporation handled by a qualified Chartered Accountant. 
+      Private Limited, SMC-Private, or LLP — complete end-to-end, fully compliant.
+    </p>
+
+    <div class="trust-row">
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <span>Company incorporated in 5–7 working days</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📋</div>
+        <span>We handle all SECP filings, MOA &amp; AOA drafting</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔒</div>
+        <span>NTN &amp; STRN registration included in all packages</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💬</div>
+        <span>Direct WhatsApp support throughout the process</span>
+      </div>
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Companies registered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7 days</div>
+        <div class="stat-label">Average turnaround</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">SECP compliant</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="form-card">
+      <div id="form-wrap">
+        <h2 class="form-title">Get a Free Consultation</h2>
+        <p class="form-subtitle">Fill this form and we'll reach out within 24 hours to walk you through the process.</p>
+
+        <form id="lead-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Ali" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Khan" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">WhatsApp Number</label>
+            <input type="tel" id="phone" placeholder="+92 300 0000000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="biz-type">Type of Company</label>
+            <select id="biz-type" required>
+              <option value="" disabled selected>Select company type</option>
+              <option value="pvt">Private Limited Company (Pvt. Ltd.)</option>
+              <option value="smc">Single Member Company (SMC-Pvt.)</option>
+              <option value="llp">Limited Liability Partnership (LLP)</option>
+              <option value="ngo">Section 42 (Non-Profit / NGO)</option>
+              <option value="unsure">Not sure — need guidance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="biz-nature">Nature of Business</label>
+            <input type="text" id="biz-nature" placeholder="e.g. IT services, trading, manufacturing">
+          </div>
+
+          <div class="form-group">
+            <label for="timeline">When do you want to incorporate?</label>
+            <select id="timeline">
+              <option value="" disabled selected>Select timeline</option>
+              <option value="asap">As soon as possible</option>
+              <option value="month">Within this month</option>
+              <option value="quarter">Within 3 months</option>
+              <option value="planning">Just planning ahead</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Anything specific you want to discuss? (optional)</label>
+            <textarea id="notes" placeholder="e.g. number of directors, foreign shareholders, NTN status..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Request Free Consultation</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <p class="privacy-note">Your details are kept private and never shared. We'll only contact you about your incorporation query.</p>
+        </form>
+      </div>
+
+      <div class="success-state" id="success-state">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">You're on the list!</h3>
+        <p class="success-sub">We've received your request and will reach out on WhatsApp within 24 hours. Please keep your phone on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div style="max-width:1100px; margin:0 auto;">
+    <p class="section-label">How it works</p>
+    <h2 class="section-title">From consultation to Certificate of Incorporation</h2>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3 class="step-title">Free consultation</h3>
+        <p class="step-desc">We discuss your business structure, shareholding, and objectives. You get clear guidance on the right company type before paying anything.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3 class="step-title">Name reservation</h3>
+        <p class="step-desc">We search SECP's database and reserve your preferred company name. MOA &amp; AOA are drafted and shared with you for approval.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3 class="step-title">Filing &amp; payment</h3>
+        <p class="step-desc">All SECP documents are filed online. Government challan is paid. We handle everything on the SECP e-Services portal on your behalf.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3 class="step-title">Certificate issued</h3>
+        <p class="step-desc">Your company is registered. We deliver the Certificate of Incorporation, Form 1, Form 21, Form 29, and NTN registration confirmation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages">
+  <div style="max-width:1100px; margin:0 auto;">
+    <p class="section-label">Transparent pricing</p>
+    <h2 class="section-title">Choose the package that fits your business</h2>
+
+    <div class="pkg-grid">
+      <div class="pkg-card">
+        <p class="pkg-name">Starter</p>
+        <p class="pkg-price">PKR 15,000 <span>/ once</span></p>
+        <p class="pkg-type">Single Member Company (SMC-Pvt.)</p>
+        <ul class="pkg-features">
+          <li><span class="check">✓</span> SECP name reservation</li>
+          <li><span class="check">✓</span> MOA &amp; AOA drafting</li>
+          <li><span class="check">✓</span> Certificate of Incorporation</li>
+          <li><span class="check">✓</span> Form 1, 21 &amp; 29</li>
+          <li><span class="check">✓</span> NTN registration (FBR)</li>
+          <li><span class="check">✓</span> WhatsApp support</li>
+        </ul>
+        <a href="#fname" class="pkg-cta" onclick="scrollToForm()">Get started</a>
+      </div>
+
+      <div class="pkg-card featured">
+        <p class="pkg-name">Standard</p>
+        <p class="pkg-price">PKR 25,000 <span>/ once</span></p>
+        <p class="pkg-type">Private Limited Company (2+ shareholders)</p>
+        <ul class="pkg-features">
+          <li><span class="check">✓</span> Everything in Starter</li>
+          <li><span class="check">✓</span> Multi-director / shareholder setup</li>
+          <li><span class="check">✓</span> Share structure planning</li>
+          <li><span class="check">✓</span> STRN registration (Sales Tax)</li>
+          <li><span class="check">✓</span> Bank account letter</li>
+          <li><span class="check">✓</span> 30-day post-incorporation support</li>
+        </ul>
+        <a href="#fname" class="pkg-cta" onclick="scrollToForm()">Get started</a>
+      </div>
+
+      <div class="pkg-card">
+        <p class="pkg-name">Premium</p>
+        <p class="pkg-price">PKR 45,000 <span>/ once</span></p>
+        <p class="pkg-type">Pvt. Ltd. + Full Compliance Setup</p>
+        <ul class="pkg-features">
+          <li><span class="check">✓</span> Everything in Standard</li>
+          <li><span class="check">✓</span> First year SECP annual return</li>
+          <li><span class="check">✓</span> Bookkeeping setup (Excel ledger)</li>
+          <li><span class="check">✓</span> Statutory registers preparation</li>
+          <li><span class="check">✓</span> Board resolution drafting</li>
+          <li><span class="check">✓</span> 3-month CA advisory support</li>
+        </ul>
+        <a href="#fname" class="pkg-cta" onclick="scrollToForm()">Get started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<div style="background: var(--cream); padding: 96px 60px 0;" id="faq">
+<div style="max-width:720px; margin:0 auto;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title" style="margin-bottom:40px;">What clients ask before registering</h2>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      How long does SECP registration actually take?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">For an SMC or Pvt. Ltd. with complete documents, SECP typically processes the application within 3–5 working days. Our total turnaround including NTN registration is 5–7 working days. Delays only occur if SECP requires clarifications on your company name or MOA.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      What documents do I need to provide?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">CNICs of all directors/shareholders, proposed company name (2–3 options), registered office address in Pakistan, business nature description, and shareholding percentages. We'll guide you through everything during the free consultation — no surprises.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      Can foreigners or overseas Pakistanis incorporate a company?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Yes. Foreign nationals can hold shares in a Pakistani Pvt. Ltd. company. Overseas Pakistanis with NICOPs can also incorporate. There are additional SECP requirements for foreign equity — we handle this end-to-end, including Form S documents and SBP remittance compliance.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      Do I need a physical office address?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">SECP requires a registered office address in Pakistan for all companies. This can be a residential address, co-working space, or business address. The address is used for official correspondence only and can be changed after incorporation.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      What's included in government fees — are they separate?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Our package prices include government challan fees paid to SECP. There are no hidden charges. The only potential add-on is if you require a specific authorised capital above the standard PKR 100,000 — we'll tell you upfront if that applies to your structure.</div>
+  </div>
+
+  <div style="height: 96px;"></div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">CompanyRegPK</div>
+  <div class="footer-note">Chartered Accountant — ICAP Member &nbsp;·&nbsp; SECP Authorised &nbsp;·&nbsp; Rawalpindi, Pakistan</div>
+  <div class="footer-note">© 2025 All rights reserved</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init('A5na70n5OkTpb9-dy');
+
+  // Scroll-triggered step animations
+  const steps = document.querySelectorAll('.step');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.2 });
+  steps.forEach(s => observer.observe(s));
+
+  // FAQ toggle
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Smooth scroll to form
+  function scrollToForm() {
+    document.getElementById('fname').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(() => document.getElementById('fname').focus(), 600);
+    return false;
+  }
+
+  // Package CTA scroll
+  document.querySelectorAll('.pkg-cta').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); scrollToForm(); });
+  });
+
+  // Form submit
+  document.getElementById('lead-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const fname = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const bizType = document.getElementById('biz-type').value;
+
+    if (!fname || !phone || !bizType) {
+      alert('Please fill in your name, WhatsApp number, and company type.');
+      return;
+    }
+
+    const submitBtn = document.querySelector('.submit-btn');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Sending...</span>';
+
+    const bizTypeText = document.getElementById('biz-type').options[document.getElementById('biz-type').selectedIndex].text;
+    const timelineEl = document.getElementById('timeline');
+    const timelineText = timelineEl.value ? timelineEl.options[timelineEl.selectedIndex].text : 'Not specified';
+    const now = new Date();
+    const submittedAt = now.toLocaleDateString('en-PK', { day:'2-digit', month:'short', year:'numeric' })
+                      + ' at ' + now.toLocaleTimeString('en-PK', { hour:'2-digit', minute:'2-digit' });
+
+    const templateParams = {
+      to_email:       'araheem.consultant@gmail.com',
+      from_name:      fname + ' ' + document.getElementById('lname').value.trim(),
+      phone:          phone,
+      email:          document.getElementById('email').value.trim() || 'Not provided',
+      company_type:   bizTypeText,
+      business_nature: document.getElementById('biz-nature').value.trim() || 'Not specified',
+      timeline:       timelineText,
+      notes:          document.getElementById('notes').value.trim() || 'None',
+      submitted_at:   submittedAt,
+    };
+
+    emailjs.send('service_lsdplfd', 'template_laoyz6h', templateParams)
+      .then(() => {
+        document.getElementById('form-wrap').style.display = 'none';
+        document.getElementById('success-state').style.display = 'block';
+      })
+      .catch(err => {
+        console.error('EmailJS error:', err);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Request Free Consultation</span>';
+        alert('Something went wrong. Please try again or contact us directly on WhatsApp.');
+      });
+  });
+</script>
+</body>
+</html>
