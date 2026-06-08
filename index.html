@@ -492,16 +492,6 @@ footer{padding:40px 32px;border-top:1px solid var(--border);display:flex;align-i
                 <input class="finp" name="bizNature" id="f-bizNature" placeholder="e.g. IT services, trading, construction…"/>
               </div>
               <div class="fg">
-                <label class="flbl">Timeline</label>
-                <select class="finp" name="timeline" id="f-timeline">
-                  <option value="">— How soon do you need it? —</option>
-                  <option>As soon as possible</option>
-                  <option>Within 1 month</option>
-                  <option>Within 3 months</option>
-                  <option>Just exploring for now</option>
-                </select>
-              </div>
-              <div class="fg">
                 <label class="flbl">Additional Notes</label>
                 <textarea class="finp" name="companyNotes" id="f-companyNotes" placeholder="Shareholding structure, company name ideas, foreign directors, etc.…"></textarea>
               </div>
@@ -752,7 +742,6 @@ async function submitLead(e) {
     // Company fields
     companyType:  d.companyType || '—',
     bizNature:    d.bizNature || '—',
-    timeline:     d.timeline || '—',
     notes:        d.companyNotes || '—',
     submittedAt,
   };
@@ -776,7 +765,6 @@ async function submitLead(e) {
     message:      d.message || d.companyNotes || '—',
     // Extra company fields (ignored by tax template, visible in company template)
     biz_nature:   d.bizNature || '—',
-    timeline:     d.timeline || '—',
     submitted_at: submittedAt,
   };
 
